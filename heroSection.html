@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="heroStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head> 
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Reliability is <br>the ultimate feature</h1>
+            <p>Delightful observability tools that turn<br> your logs &  monitoring into a secret weapon <br>for shipping better
+                software faster.</p>
+            <button onclick="registerUser()" class="demo-button">Register Now</button>
+        </div>
+    </div>
+
+    <script>
+        const registerUser = () => {
+            Swal.fire({
+                title: "Registered Successfully",
+                icon: "success",
+                confirmButtonText: "OK"
+            });
+        };
+    </script>
+</body>
+
+</html>
