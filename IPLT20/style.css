@@ -1,0 +1,66 @@
+.gradient-bg {
+    background: linear-gradient(135deg, #1903a2 0%, #2c2c2c 100%);
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.score-card {
+    transition: transform 0.3s ease;
+}
+
+.score-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-logo {
+    transition: transform 0.3s ease;
+}
+
+.team-logo:hover {
+    transform: scale(1.1);
+}
+
+.team-card {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.player-card {
+    transition: all 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.team-card .team-logo {
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-logo {
+    transform: scale(1.1);
+}

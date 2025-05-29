@@ -1,0 +1,68 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+::-webkit-scrollbar-thumb {
+    background: #535353;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #686868;
+}
+
+/* Custom animations */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom gradient text */
+.gradient-text {
+    background: linear-gradient(90deg, #1db954, #1ed760);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Custom image styling */
+.album-art {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Plain color playlist images */
+.playlist-purple {
+    background-color: #8d67ab;
+}
+.playlist-blue {
+    background-color: #1e3264;
+}
+.playlist-green {
+    background-color: #1ed760;
+}
+.playlist-red {
+    background-color: #e8115b;
+}
+.playlist-orange {
+    background-color: #f59b23;
+}
+.playlist-teal {
+    background-color: #2d46b9;
+}
+.playlist-pink {
+    background-color: #ff0090;
+}
+.playlist-yellow {
+    background-color: #ffc864;
+}

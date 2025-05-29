@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #575793;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #444;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.list {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.list:hover {
+    background-color: #f0f0f0;
+}
+
+.review {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.review button {
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1e1e2f;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.review button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+#review-pic {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+#review-pic:hover {
+    transform: scale(1.05);
+}
+
+.menu-toggle, .sidebar-toggle {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    .menu-toggle, .sidebar-toggle {
+        display: block;
+    }
+
+    .navbar {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .sidebar {
+        position: absolute;
+        z-index: 100;
+        height: calc(100vh - 70px);
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+}

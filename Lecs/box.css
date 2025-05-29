@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    width: 0px;
+}
+
+div{
+    background-color: yellow;
+    border: 2px solid red;
+    width: 50px;
+    padding: 50px;
+    margin: 50px;
+    height: 50;
+}

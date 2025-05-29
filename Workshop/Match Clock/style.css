@@ -1,0 +1,44 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.ball {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+.ball span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,129 @@
+:root {
+    --bg-color: #1f1f2e;
+    --card-bg: #2c2c3c;
+    --text-color: #f1f1f1;
+    --accent-color: #4e9eff;
+    --input-bg: #2a2a3d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.app-container {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type="text"] {
+    background: var(--input-bg);
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+    width: 60%;
+    min-width: 200px;
+    outline: none;
+    box-shadow: inset 0 0 5px #000;
+}
+
+button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(78, 158, 255, 0.3);
+}
+
+button:hover {
+    background: #377ad6;
+}
+
+.result-container {
+    background: #262636;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    animation: fadeIn 0.4s ease-in-out;
+    display: none;
+}
+
+.result-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid var(--accent-color);
+}
+
+.result-container h2 {
+    margin: 0.5rem 0;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.result-container p {
+    color: #ff6b6b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.done-button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(78, 158, 255, 0.3);
+    margin-top: 1.5rem;
+    display: none;
+}
+
+.done-button:hover {
+    background: #377ad6;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+                <h2 style="margin: 0;">IPL Zone</h2>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+        <nav class="navbar-menu" id="navbarMenu">
+            <div class="navbar">Home</div>
+            <div class="navbar">Sale</div>
+            <div class="navbar">Buy</div>
+            <div class="navbar">Orders</div>
+            <div class="navbar">Profile</div>
+        </nav>
+    </header>
+
+    <main style="display: flex;">
+        <div class="sidebar" id="sidebar">
+            <div class="list">Home</div>
+            <div class="list">Shorts</div>
+            <div class="list">Subscription</div>
+            <div class="list">History</div>
+            <div class="list">Watch Later</div>
+            <div class="list">Liked Videos</div>
+            <div class="list">Explore</div>
+        </div>
+
+        <div class="review">
+            <button onclick="prevImage()">&lt </button>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png"
+                alt="MI" width="250" height="150" id="review-pic">
+            <button onclick="nextImage()">&gt</button>
+        </div>
+    </main>
+</body>
+<script src="prj.js"></script>
+
+</html>
