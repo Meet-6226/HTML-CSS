@@ -1,0 +1,17 @@
+table,
+        th,
+        td{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        th,
+        td{
+            padding: 5px;
+            text-align: center;
+        }
+#Total {
+    background-color: yellow;
+}
+#Products{
+    background-color: aqua;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Application Form</title>
+    </head>
+    <body>
+        <h1>Job Application</h1>
+
+        <form action="">
+            <label for="Name">Name :</label>
+            <input type="text" name="Name" id="Name">
+            <br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="phone">Phone No. :</label>
+            <input type="tel" name="phone" id="phone">
+            <br><br>
+
+            <input type="file" name="file" id="file">
+            <br><br>
+
+            <label for="exp">Experience (years) :</label>
+            <input type="number" name="experience" id="exp" min="0" max="50">
+            <br><br>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="radio" name="html" id="checkbox1">
+                <label for="checkbox1">HTML</label>
+                <br>
+
+                <input type="radio" name="CSS" id="checkbox2">
+                <label for="checkbox2">CSS</label>
+                <br>
+                
+                <input type="radio" name="JavaScript" id="checkbox3">
+                <label for="checkbox3">JavaScript</label>
+                <br>
+                
+            </fieldset>
+            <br>
+
+            <label for="education">Highest Education :</label>
+            <br>
+            <select name="education" id="education">
+                <option value="">select</option>
+                <option value="option1">10th Passout</option>
+                <option value="option2">12th Passout</option>
+                <option value="option3">Graduate</option>
+                <option value="option4">Post-Graduate</option>
+                <option value="option5">Other</option>
+            </select>
+            <br><br>
+            
+            <legend>Avaliability :</legend>
+            <input type="radio" name="education" id="fulltime">
+            <label for="fulltime">Full Time</label>
+
+            <input type="radio" name="education" id="parttime">
+            <label for="parttime">Part Time</label>
+            <br><br>
+
+            <label for="comment">Additional Comment :</label><br>
+            <textarea name="" id="" cols="50%" rows="10"></textarea>
+            <br>
+            <button>Submit Application</button>
+        </form>
+    </body>
+</html>

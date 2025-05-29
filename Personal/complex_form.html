@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Complex Form</h1>
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name">
+                <br><br>
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <br><br>
+
+                <label for="phone">Phone :</label>
+                <input type="tel" name="phone" id="phone">
+                <br><br>
+
+                <label for="DOB">Date of Birth :</label>
+                <input type="date" name="DOB" id="DOB">
+                <br><br>
+
+                <legend>Gender :</legend>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+                <br><br>
+
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="">select</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="India">India</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Africa">South Africa</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Address</legend>
+
+                <label for="street">Street :</label>
+                <input type="text" name="street" id="street">
+                <br><br>
+
+                <label for="city">City :</label>
+                <input type="text" name="city" id="city">
+                <br><br>
+
+                <label for="state">State :</label>
+                <input type="text" name="state" id="state">
+                <br><br>
+
+                <label for="code">Zipcode</label>
+                <input type="text" pattern="[0-9]{6}" name="code" id="code">
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Other Information</legend>
+
+                <label for="comment">Comments:</label>
+                <br>
+                <textarea name="comment" id="comment" cols="30%" rows="10%"></textarea>
+                <br><br>
+
+                <input type="checkbox" name="t&c" id="t&c" required>
+                <label for="t&c">I agree to the terms of service</label>
+            </fieldset>
+            <br>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
